@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="logic\test_main.cpp" />
+    <ClCompile Include="logic\alias_method\alias_method.cpp">
+      <Filter>alias_method</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\x5_random\x5_random.cpp">
+      <Filter>x5_random</Filter>
+    </ClCompile>
+    <ClCompile Include="logic\x5_alias_method\alias_method_mgr.cpp">
+      <Filter>x5_alias_method</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="alias_method">
+      <UniqueIdentifier>{8d6d2797-c3f6-4c10-975b-acc058972ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x5_random">
+      <UniqueIdentifier>{3e5589e8-85fe-4130-b4bb-d15eac79e585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="x5_alias_method">
+      <UniqueIdentifier>{c63fc39a-a885-412b-a7fe-91170f92ef1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logic\alias_method\alias_method.h">
+      <Filter>alias_method</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\x5_random\x5_random.h">
+      <Filter>x5_random</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\x5_alias_method\alias_method_interface.h">
+      <Filter>x5_alias_method</Filter>
+    </ClInclude>
+    <ClInclude Include="logic\x5_alias_method\alias_method_mgr.h">
+      <Filter>x5_alias_method</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
