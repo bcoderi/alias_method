@@ -60,9 +60,10 @@ void CAliasMethodMgr::GenerateAliasTable(const std::vector<float>& probs, std::v
 }
 
 int CAliasMethodMgr::Random(const std::vector<std::pair<float, int> >& alias_table, const std::vector<int>& out_value)
-{
-	int idx = 1;	//	todo��һ�������
-	if (1000.f/*todo �ڶ��������*/ >= alias_table[idx].first && alias_table[idx].second != std::numeric_limits<int>::max())
+
+	int idx = 1;	//    todo第一个随机数,0-alias_table.size范围，炫舞项目中使用SecureRand2G()替换
+	//	todo 0.1f 第二个随机数，0-1.0范围，炫舞项目中总使用SecureRand01()替换
+	if (0.1f >= alias_table[idx].first && alias_table[idx].second != std::numeric_limits<int>::max())
 	{
 		return out_value[alias_table[idx].second];
 	}
